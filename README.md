@@ -23,7 +23,10 @@ In order to keep everything minimalistic, InfernoJS was used **without** JSX. No
     Note: using c as a shorthand for the createElement method
     
     ```js
-    import { render } from './lib/inferno.js';import { createElement as c } from './lib/inferno-create-element.js'import App from './App.js'render(c(App, null, null), document.getElementById('root'));
+    import { render } from './lib/inferno.js';
+    import { createElement as c } from './lib/inferno-create-element.js'
+    import App from './App.js'
+    render(c(App, null, null), document.getElementById('root'));
     ```
     
 
@@ -138,7 +141,7 @@ In order to keep everything minimalistic, InfernoJS was used **without** JSX. No
 
 -   Context.js file adds *Context* support, similar to Mobx for inferno [https://github.com/infernojs/inferno/tree/master/packages/inferno-mobx](https://github.com/infernojs/inferno/tree/master/packages/inferno-mobx)
     
-    -   create a *Context* with the **createCtx(<contextName>)** method
+    -   create a *Context* with the **createCtx(contextName)** method
         
     -   subscribe to a *Context* anywhere with the
         
@@ -148,6 +151,6 @@ In order to keep everything minimalistic, InfernoJS was used **without** JSX. No
         
         method inside of a *Component*
         
-    -   Set the contexts value from anywhere with the **setCtx(<contextName>,<contextValue>)**
+    -   Set the contexts value from anywhere with the **setCtx(contextName,contextValue)**
         
     -   The subscribed *Components* state will be automatically be changed and it will contain a variable named like the *Context*

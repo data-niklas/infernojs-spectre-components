@@ -1,0 +1,7 @@
+Changes in the spectre.min.css:
+- Changed the large modal:
+    - Overlay will now have the same background as the small modal and default modal background (sleightly transparent)
+    - Kept the box shadow
+
+Changes in the inferno-create-components.js
+- Changed the inferno import to `from './inferno.js'`

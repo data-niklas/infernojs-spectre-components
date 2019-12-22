@@ -23,7 +23,10 @@ In order to keep everything minimalistic, InfernoJS was used **without** JSX. No
     Note: using c as a shorthand for the createElement method
     
     ```js
-    import { render } from './lib/inferno.js';import { createElement as c } from './lib/inferno-create-element.js'import App from './App.js';render(c(App, null, null), document.getElementById('root'));
+    import { render } from './lib/inferno.js';
+    import { createElement as c } from './lib/inferno-create-element.js'
+    import App from './App.js'
+    render(c(App, null, null), document.getElementById('root'));
     ```
     
 
